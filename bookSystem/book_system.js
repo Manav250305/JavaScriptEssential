@@ -40,3 +40,9 @@ function showbooks() {
             document.getElementById('bookDescription').value = '';
             document.getElementById('pagesNumber').value = '';
  }
+
+ function deleteBook(index)
+ {
+    books.splice(index,1);
+    showbooks();
+ }
